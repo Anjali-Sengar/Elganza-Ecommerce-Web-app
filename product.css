@@ -55,3 +55,86 @@ a{
 .item_2 .rate{
     color: rgb(168, 21, 46);
 }
+
+.western_collection,
+.tops_collection,
+.bottom_collection,
+.ethnic_collection,
+.kurtis_collection,
+.makeup_collection,
+.footwear_collection,
+.acesories_collection {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.item_2 {
+    width: 100%;
+    height: auto;
+}
+
+.item_2 > div {
+    aspect-ratio: 14.5 / 17;
+    height: auto;
+}
+
+@media (max-width: 1100px) {
+    .western_collection,
+    .tops_collection,
+    .bottom_collection,
+    .ethnic_collection,
+    .kurtis_collection,
+    .makeup_collection,
+    .footwear_collection,
+    .acesories_collection {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .western_collection,
+    .tops_collection,
+    .bottom_collection,
+    .ethnic_collection,
+    .kurtis_collection,
+    .makeup_collection,
+    .footwear_collection,
+    .acesories_collection {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+
+    .western_collection_heading,
+    .tops_collection_heading,
+    .bottom_collection_heading,
+    .ethnic_collection_heading,
+    .kurtis_collection_heading,
+    .makeup_collection_heading,
+    .footwear_collection_heading,
+    .acesories_collection_heading {
+        font-size: clamp(1.35rem, 5vw, 2rem);
+    }
+
+    .item_2 p {
+        font-size: 1rem;
+    }
+
+    .item_2 .rate {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .western_collection,
+    .tops_collection,
+    .bottom_collection,
+    .ethnic_collection,
+    .kurtis_collection,
+    .makeup_collection,
+    .footwear_collection,
+    .acesories_collection {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

@@ -479,7 +479,7 @@ if (addToCart) {
                 ...product
             });
             localStorage.setItem("cart", JSON.stringify(cart));
-            alert("product added to cart!");
+            
         }
 
 

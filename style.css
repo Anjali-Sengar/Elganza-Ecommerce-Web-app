@@ -758,6 +758,329 @@ flex-direction: column;
     background: #fff8fa;
 }
 
+@media (max-width: 1450px) {
+    .explore_products_1,
+    .explore_products_2 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .variety_product {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 0.75rem;
+    }
+
+    .western_wear,
+    .suit,
+    .ethnic,
+    .acessories {
+        margin-inline: 0;
+    }
+
+    .western_img,
+    .makeup_img,
+    .ethnic_img,
+    .bottom_img,
+    .acessories_img,
+    .tops_img,
+    .footwear_img,
+    .suit_img {
+        width: 100%;
+        aspect-ratio: 20 / 18;
+        height: auto;
+    }
+
+    .explore_items {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .item_1 {
+        width: 100%;
+        height: auto;
+    }
+
+    .item_img_anarkali,
+    .item_img_short_dress,
+    .item_img_top,
+    .item_img_top2,
+    .item_img_sandal,
+    .item_img_earings,
+    .item_img_bag,
+    .item_img_suit,
+    .item_img_lipstick,
+    .item_img_bodycon,
+    .item_img_bottom,
+    .item_img_acessories {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 14.5 / 17;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        box-sizing: border-box;
+        height: auto;
+        min-height: 6rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem 1rem;
+    }
+
+    .nav-heading {
+        margin-inline: 1rem;
+    }
+
+    .home,
+    .products,
+    .new_arrival,
+    .my_order,
+    .about {
+        margin-right: 0;
+    }
+
+    .user,
+    .cart {
+        margin-inline: 0.25rem;
+    }
+
+    .search_bar {
+        flex: 1 1 16rem;
+        max-width: 32rem;
+    }
+
+    .explore_products_1,
+    .explore_products_2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .explore_products_1 > a,
+    .explore_products_2 > a {
+        min-width: 0;
+    }
+
+    .variety_product {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 0.75rem;
+    }
+
+    .western_wear,
+    .suit,
+    .ethnic,
+    .acessories {
+        margin-inline: 0;
+    }
+
+    .western_img,
+    .makeup_img,
+    .ethnic_img,
+    .bottom_img,
+    .acessories_img,
+    .tops_img,
+    .footwear_img,
+    .suit_img {
+        width: 100%;
+        aspect-ratio: 20 / 18;
+        height: auto;
+    }
+
+    .explore_items {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        padding: 1rem;
+    }
+
+    .item_img_anarkali,
+    .item_img_short_dress,
+    .item_img_top,
+    .item_img_top2,
+    .item_img_sandal,
+    .item_img_earings,
+    .item_img_bag,
+    .item_img_suit,
+    .item_img_lipstick,
+    .item_img_bodycon,
+    .item_img_bottom,
+    .item_img_acessories {
+        aspect-ratio: 14.5 / 17;
+    }
+
+    .item_html {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .item_html_image {
+        box-sizing: border-box;
+        width: min(100%, 30rem);
+        height: auto;
+        aspect-ratio: 3 / 4;
+        padding: 0;
+    }
+
+    .item_html_data {
+        width: min(100%, 30rem);
+        align-items: flex-start;
+    }
+
+    #cart_html {
+        justify-content: center;
+    }
+
+    .cart_item {
+        box-sizing: border-box;
+        width: min(100%, 28rem);
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .cart_image {
+        aspect-ratio: 1 / 1;
+        height: auto;
+    }
+
+    .cart_data {
+        width: 100%;
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    .feature {
+        padding: 0.75rem;
+        border-right: 0;
+    }
+
+    .footer-bottom {
+        padding: 1rem 2rem;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .welcome {
+        height: auto;
+        min-height: 2rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    nav {
+        gap: 0.5rem 0.75rem;
+    }
+
+    .nav-heading {
+        flex-basis: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header_img {
+        height: clamp(12rem, 55vw, 22rem);
+    }
+
+    .explore_picks {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .explore_products_1 > a,
+    .explore_products_2 > a {
+        min-width: 0;
+    }
+
+    .variety_product h2 {
+        font-size: 1.1rem;
+    }
+
+    .variety_product p {
+        padding: 0.4rem 0.75rem;
+    }
+
+    .explore_items {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .item_1 p {
+        font-size: 1rem;
+    }
+
+    .item_1 .rate {
+        font-size: 1.25rem;
+    }
+
+    .item_html_data h1 {
+        margin-bottom: 0.5rem;
+        font-size: 1.75rem;
+    }
+
+    .item_html_data p {
+        font-size: 1.5rem;
+    }
+
+    .cart_data h3 {
+        font-size: 1.5rem;
+    }
+
+    .cart_data p {
+        font-size: 1.1rem;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.25rem;
+    }
+
+    .footer-brand h2 {
+        font-size: 3.5rem;
+    }
+
+    .footer-brand .tagline {
+        margin-left: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+    }
+
+    .feature {
+        padding: 0.5rem;
+    }
+
+    .footer-bottom {
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .orders-page {
+        padding: 0.75rem;
+    }
+
+    .orders-card {
+        padding: 2rem 1rem;
+    }
+}
+
 .orders-card h2 {
     margin: 0 0 0.5rem;
     color: #a0083b;
