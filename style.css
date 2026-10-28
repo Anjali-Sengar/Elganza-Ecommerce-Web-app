@@ -101,6 +101,10 @@ nav{
 .user, .cart {
     margin-inline: 1rem;
 }
+
+.nav-tools {
+    display: contents;
+}
  
 
  .header_img{
@@ -856,6 +860,29 @@ flex-direction: column;
         max-width: 32rem;
     }
 
+    .nav-tools {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        flex: 1 1 100%;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nav-tools .search_bar {
+        flex: 1 1 16rem;
+        width: auto;
+        min-width: 0;
+    }
+
+    .nav-tools .cart,
+    .nav-tools .user {
+        margin: 0;
+        flex: 0 0 auto;
+    }
+
     .explore_products_1,
     .explore_products_2 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -985,6 +1012,14 @@ flex-direction: column;
 
     nav {
         gap: 0.5rem 0.75rem;
+    }
+
+    .nav-tools {
+        gap: 0.5rem;
+    }
+
+    .nav-tools .search_bar {
+        flex-basis: 8rem;
     }
 
     .nav-heading {
