@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.western_collection_heading, .tops_collection_heading, .bottom_collection_heading, .ethnic_collection_heading , .kurtis_collection_heading , .makeup_collection_heading , .footwear_collection_heading , .acesories_collection_heading{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.western_collection, .tops_collection, .bottom_collection, .ethnic_collection, .kurtis_collection , .makeup_collection , .footwear_collection , .acesories_collection{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    gap: 1rem;
+}
+
+.item_2{
+    height: 20rem;
+    width: 14.5rem;
+ border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+.product_img_bodycon, .product_img_frock, .product_img_sharara, .product_img_gown, .product_img_lehenga, .product_img_dress , .product_img_top1 , .product_img_top2 , .product_img_top3 , .product_img_top4, .product_img_top5, .product_img_top6, .product_img_bottom1 , .product_img_bottom2 , .product_img_bottom3 , .product_img_bottom4 , .product_img_bottom5 , .product_img_bottom6 , .product_img_ethnic1 , .product_img_ethnic2 , .product_img_ethnic3 , .product_img_ethnic4 , .product_img_ethnic5 , .product_img_ethnic6 , .product_img_suit1 ,  .product_img_suit2 , .product_img_suit3 ,  .product_img_suit4
+,  .product_img_suit5,  .product_img_suit6 , .product_img_makeup1 , .product_img_makeup2, .product_img_makeup3 , .product_img_makeup4, .product_img_makeup5, .product_img_makeup6 , .product_img_footwear1,  .product_img_footwear2, .product_img_footwear3, .product_img_footwear4, .product_img_footwear5, .product_img_footwear6 , .product_img_acesories1,  .product_img_acesories2, .product_img_acesories3, .product_img_acesories4, .product_img_acesories5, .product_img_acesories6{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+ 
+ 
+ 
+}
+
+.item_2 p{
+     font-weight: bold;
+     font-size: 19px;
+}
+
+
+.item_2 .rate{
+    color: rgb(168, 21, 46);
+}
